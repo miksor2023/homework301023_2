@@ -1,11 +1,10 @@
 package Package;
 
-public class Bicycle {
-
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+public class Bicycle extends Vehicle implements ServiceStation{
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
+    public void check() {//реализация метода, объявленного в интерфейсе ServiceStation
+        this.repairWheels();
     }
 }
