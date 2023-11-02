@@ -21,10 +21,7 @@ public abstract class Vehicle {//класс-родитель, вынесены �
         System.out.println("Проверяем двигатель");
     }
 
-    public void checkTrailer() {
-
-    };
-    public void repairWheels () {
+      public void repairWheels () {
         System.out.println("Обслуживаем " + this.getModelName());
         for (int i = 0; i < this.getWheelsCount(); i++) {
             this.updateTyre();
