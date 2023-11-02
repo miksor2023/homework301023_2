@@ -7,7 +7,7 @@ public class Car extends Vehicle{
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     };
-    public void checkk() {//реализация метода, объявленного в интерфейсе ServiceStation
+    public void checkk() {
         this.repairWheels();
         this.checkEngine();
     }

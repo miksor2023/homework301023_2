@@ -4,7 +4,7 @@ public class Bicycle extends Vehicle{
     public Bicycle(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
-    public void checkk() {//реализация метода, объявленного в интерфейсе ServiceStation
+    public void checkk() {
         this.repairWheels();
     }
 }

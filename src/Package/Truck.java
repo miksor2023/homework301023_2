@@ -11,7 +11,7 @@ public class Truck extends Vehicle{
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
-    public void checkk(){//реализация метода, объявленного в классе ServiceStation
+    public void checkk(){
         this.repairWheels();
         this.checkEngine();
         this.checkTrailer();
