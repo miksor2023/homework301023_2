@@ -1,5 +1,7 @@
 package Package;
 
-public interface ServiceStation {//интерфейс с описанием метода chek(), релизация которого у каждого наследника своя
-    public void check();
+public class ServiceStation {
+    public void check(Vehicle vehicle){
+        vehicle.checkk();
+    }
 }

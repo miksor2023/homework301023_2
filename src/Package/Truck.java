@@ -1,14 +1,17 @@
 package Package;
 
 
-public class Truck extends Vehicle implements ServiceStation{
+public class Truck extends Vehicle{
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
+    }
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
     }
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
-    public void check() {//реализация метода, объявленного в интерфейсе ServiceStation
+    public void checkk(){//реализация метода, объявленного в классе ServiceStation
         this.repairWheels();
         this.checkEngine();
         this.checkTrailer();
